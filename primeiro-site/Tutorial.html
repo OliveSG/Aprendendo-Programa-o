@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<meta charcet="utf-8"> <!--Diz para o navegador o tipo de teclado utilizado na programação-->
+<html>
+  <head><!--Tudo que não se ve no site-->
+      <title>
+          Título da minha página web.
+      </title>
+      <script>
+          ///código em javascript
+      </script>
+      <script defer src="arquivoorigemcódigo.js"></script>
+      <meta http-equiv="refresh" content="3;url-http://www.google.com.br">
+      <noscript> 
+          <!--script está desativado no navegador, roda diferente de acordo com aonde será aplicado.-->
+          <style>
+            .no-script{
+                color: red;
+                }
+          </style>
+        </noscript>
+        <link href="arquivodestino.css" media="screen" rel="stylesheet">         <!--exemplo de link-->
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">      <!--exemplo adicionando ícone-->
+        <style> 
+        /*adiciona um estilo ao documento sem precisar carregar um novo arquivo css*/
+            body{
+                background-color: purple;
+                color: white;
+            }
+        </style>
+        <meta name="description" content="Meu Código html">
+        <meta name="robots" content="noindex">      <!--Indexa ou não uma página. nesse caso "noindex" significa que não irá seguir o index-->
+        <meta name="robots" content="nofollow">      <!--Segue ou não um link. nesse caso "nofollow" significa que não irá seguir o link-->     <!--refresh na página ou redireciona para outra página-->
+    </head>
+  <body>        <!--Todo o conteúdo da página-->
+      <!--exemplos de elementos de bloco, pode adicionar qualquer elemento inline dentro-->
+        <p>Olá mundo</p><!--parágrafo de texto-->
+      <div><!--uma seção separada no documento-->
+          <h1>Aqui é um título H1</h1>
+          <br><!--quebra de texto, espaçamento entre parágrafos-->
+          <h2>Aqui um título H2</h2>
+          <br>
+          <h3>Aqui é um título H3</h3>
+          <br>
+          <h4>Aqui é um título H4</h4>
+          <br>
+          <h5>Aqui é um título H5</h5>
+          <br>
+          <h6>Aqui é um título H6</h6>
+          <br>
+          <p>
+              Exemplo de como usar a tag br 
+            <br>Aqui está a tag br.
+          </p>
+      </div>
+      <hr> 
+      <div><!--explicação de negrito, itálico e citações-->
+            <p>Meu site <strong>web</strong></p> <!--exemplo de utilização de negrito-->
+            <p>Meu site <i>web</i></p><!--exemplo de utilização de itálio-->
+            <blockquote>Citação de um determinado autor</blockquote><!--exemplo de utilização de citação-->   
+      </div> 
+      <hr> 
+      <h1>Exemplo de título H1 fora do div</h1> <!--títulos quanto maior o número menor o tamanho-->
+      <h2>Exemplo de título H2 fora do div</h2>
+      <ul><!--define uma lista não ordenada(sem sequência)-->
+          <li>Item A</li><!--Item da lista-->
+          <li>Item B</li>
+          <li>Item C</li>
+      </ul>
+      <ol> <!--Define lista ordenada (com seguência)-->
+          <li>Item 1</li><!--Idem da lista-->
+          <li>Item 2</li>
+          <li>Item 3</li>
+      </ol>
+      <dl><!--lista de definição-->
+          <dt>Item 1</dt><!--sem tab-->
+          <dd>Item A</dd><!--com tab-->
+          <dt>Item 2</dt>
+          <dd>Item B</dd>
+          <dt>Item 3</dt>
+          <dd>Item C</dd>
+      </dl>
+      <sub>SUB TAG</sub><!--texto acima-->
+      <sup>SUP TAG</sup><!--texto abaixo-->
+      <br><small>SMALL TAG</small><!--texto menor-->
+      <br><del>DEL TAG</del><!--texto riscado-->
+      <br><ins>INS TAG</ins><!--texto com linha embaixo-->
+      <br><mark>MARK TAG</mark><!--texto com marca texto amarelo-->
+      <!--todos acima são muito pouco utilizados-->
+      <hr>
+      <!--TAGS DE CONTAINER, possuem um conjunto de outras tags dentro delas, segue abaixo alguns exemplos-->
+        <div class="" id=""><!--container genérico para adicionar atributos em css e javascript-->
+
+        </div>
+        <article><!--tag de artigo, define algo independente na pagina-->
+            <h2>Blog-Meus posts</h2>
+        </article>
+        <section><!--seção de um documento, cada seção tem uma tag de título. Útil para dividir um artigo longo.-->
+            <h2>Seção de uma página</h2>
+        </section>
+    <hr>
+    <!--TAGS RELACIONADAS A PÁGINA-->
+        <nav></nav><!--cria marcação, que define uma navegação na página, como um menu-->
+        <aside></aside><!--adiciona parte de um conteúdo que faz parte de um conteúdo maior-->
+        <header></header><!--Uma parte da página, geralmente fica na introdução-->
+        <main></main><!--tag principal, o conteúdo principal da página-->
+        <footer></footer><!--rodapé da página-->
+      <!--exemplos de elementos inline-->
+      <a href="www.google.com.br"></a> <!--Define um hiperlink-->
+      <span><!--cria uma seção dentro de um parágrafo-->
+      </span>
+    <hr>
+    <!--formulários-->
+    <form method="POST" action="/registrar"><!--por padrão sempre vem no método get, mas também tem o post. A ação usada é para encaminhar o osuário para outra página no final-->
+        <input type="text"> <!--texto normal--> 
+        <input type="password"><!--oculta o texto escrito-->
+        <input type="number"><!--númeor normal-->
+        <input type="date"><!--data, alguns browser antigos não rodam-->
+        <input type="hidden"><!--envia um comando, geralmente usado em java-->
+        <input type="email"><!--adiciona email-->
+        <input type="file" multiple><!--exportar arquivo, o multiple permite enviar mais de 1 arquivo-->
+        <input type="submit" value="Enviar"><!--botão que vai enviar o formulário-->
+        <input type="reset" value="Apagar"><!--botão que apaga tudo que foi escrito-->
+    </form>
+    <hr>
+  </body>
+</html>
