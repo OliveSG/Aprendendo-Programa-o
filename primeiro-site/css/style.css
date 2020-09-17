@@ -61,7 +61,9 @@
     color:#777;
 
 }
-/*.btnBurger{}*/
+.btnBurger{
+    font-size: 0;
+}
 .burguer-container{
     cursor: pointer;
     z-index: 3;  
